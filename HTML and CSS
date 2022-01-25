@@ -1,0 +1,207 @@
+FIRST PAGE
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pacific Northwest Transplants</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="hero-container">
+        <div class="hero-container-inner">
+          <h1>Pacific Northwest Transplants</h1>
+          <p>
+            What happens when two Minnesotans who love big trees, the ocean, and
+            being outdoors move to Oregon? A whole lot of adventuring.
+          </p>
+          <a href="#" class="btn">Explore With Us</a>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
+
+----------------------------------------
+
+LOCATIONS
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="about">
+      <section>
+        <h1 class="adventures">Adventures</h1>
+        <p class="description">
+          From the misty forests and awe-inspiring trees of Redwood National
+          Park to the rain-soaked islands of the Puget Sound, we drive, hike,
+          and explore in an impossible attempt to see it all.
+        </p>
+      </section>
+      <img
+        class="kyle-and-kelsey"
+        src="headshot.jpg"
+        alt="Two people smiling in
+      Fern Canyon in Redwood National Park"
+        width="450"
+        height="600"
+      />
+    </div>
+
+    <div class="locations">
+      <div class="oregon"></div>
+
+      <div class="location-2">
+        <div class="california"></div>
+      </div>
+
+      <div class="location-3">
+        <div class="washington"></div>
+      </div>
+    </div>
+  </body>
+</html>
+
+-----------------------------------------------
+
+CSS STYLESHEET
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(fern-canyon-2.jpg);
+  background-size: cover;
+  color: #fff;
+}
+
+.hero-container {
+  width: 1200px;
+  position: absolute;
+
+  left: 55%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.hero-container-inner {
+  width: 50%;
+}
+
+h1 {
+  font-size: 52px;
+  margin-bottom: 32px;
+  line-height: 1.05;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #2b8a3e;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 9px;
+}
+
+.about {
+  height: 100vh;
+  width: auto;
+  background-color: #2b8a3e;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
+.kyle-and-kelsey {
+  border-radius: 9px;
+  margin-right: 20px;
+}
+
+.adventures {
+  font-size: 52px;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.description {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.locations {
+  display: flex;
+  width: auto;
+  gap: 100px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+.locations:hover .oregon:hover {
+  opacity: 0.3;
+}
+
+.oregon {
+  height: 300px;
+  width: 300px;
+  background-image: url(oregon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 9px;
+}
+
+.california {
+  height: 300px;
+  width: 300px;
+  background-image: url(california.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 9px;
+}
+
+.washington {
+  background-color: purple;
+  height: 300px;
+  width: 300px;
+  background-image: url(washington.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 9px;
+}
